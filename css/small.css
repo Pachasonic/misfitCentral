@@ -1,0 +1,167 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+    font-family: "Outfit", serif;
+    background-color: white;
+    background-size: 100%;
+    color: white;
+}
+
+header {
+    text-align: center;
+    margin: 0;
+    background-color: rgb(0, 0, 102);
+    color: white;
+    padding: 1.5rem;
+    font-size: 200%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5% 1rem 5% ;
+}
+
+header h1 {
+    padding-right: 10rem;
+}
+
+header span img{
+    width: 44px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav button{
+    flex-basis: 48%;
+    margin: .5rem 1%;
+    padding: 1rem .2rem;
+    border-radius: 10px;
+    background-color: #187DE9;
+    color: white;
+    border: none;
+}
+
+header #town {
+    padding: .5rem 0;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+}
+
+nav button.active {
+    background-color:#0e6acc;
+    border: 2px solid blue;   
+    filter: drop-shadow(4px 4px 4px black); 
+
+}
+
+nav button:hover {
+    background-color: #0e6acc;
+    filter: drop-shadow(4px 4px 4px black);
+}
+
+#viewer { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    border-radius: 16px;
+}
+
+#viewer figure {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    background-color: rgb(23, 23, 255);
+    width: 300px;
+    margin: .5rem;
+    border-radius: 12px;
+    height: auto;
+    filter: drop-shadow(4px 4px 4px black);
+}
+
+#viewer img {
+    display: block;
+    padding: 0 0 .5rem 0;
+    border: 1rem solid rgb(23, 23, 255);
+    border-radius: 16px 16px 0 0;
+}
+
+#viewer div {
+    max-width: 300px;
+    max-height: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+#viewer figcaption {
+    text-align: center;
+    font-size: 16pt;
+    font-weight: 500;
+    color: white;
+    background-color: darkblue;
+    padding: 1rem;
+    border-radius: 0 0 12px 12px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+    background-color: grey;
+}
+
+aside.show {
+    display: block;
+    position: absolute;
+    top: 0%;
+    height: 100%;
+    left: 0%;
+    right: 0;
+    width: 100%;
+    background-color: darkblue;
+    text-align: center;
+}
+
+aside.show #navHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5% 0 5% ;
+}
+
+aside.show #navHeader span {
+    padding: 0;
+}
+
+aside.show #navHeader img {
+    width: 44px;
+}
+
+aside.show a {
+    color: white;
+    font-size: 20px;
+    display: block;
+    padding: .8rem;
+    text-decoration: none;
+
+}
+
+aside {
+    display: none;
+}

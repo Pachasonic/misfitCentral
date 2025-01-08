@@ -1,0 +1,30 @@
+@media only screen and (min-width: 60rem) {
+    nav {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    #viewer img {
+        width: 100%;
+    }
+
+    aside.show {
+        display: block;
+        position: absolute;
+        top: 0%;
+        height: 100%;
+        left: 70%;
+        right: 0;
+        width: 30%;
+        background-color: darkblue;
+        text-align: center;
+        
+    }
+
+    aside.show #navHeader {
+        justify-content: space-around;
+        padding: 0 3% 0 15%;
+    }
+    
+
+} /* end media query*/
